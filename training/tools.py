@@ -149,7 +149,7 @@ def preprocess(text):
         X.append(result)
     return X
 
-def load_googlenews_vectors():
+def load_googlenews_vectors(path_to_word2vec):
     """
     load the word2vec GoogleNews vectors
     """
