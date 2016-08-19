@@ -67,7 +67,7 @@ def load_model(embed_map=None):
     # Load word2vec, if applicable
     if embed_map == None:
         print 'Loading word2vec embeddings...'
-        embed_map = load_googlenews_vectors(path_to_word2vec)
+        embed_map = load_googlenews_vectors()
 
     # Lookup table using vocab expansion trick
     print 'Creating word lookup tables...'
@@ -149,7 +149,7 @@ def preprocess(text):
         X.append(result)
     return X
 
-def load_googlenews_vectors(path_to_word2vec):
+def load_googlenews_vectors():
     """
     load the word2vec GoogleNews vectors
     """
